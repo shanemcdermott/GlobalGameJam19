@@ -1,0 +1,38 @@
+Day 1:
+Weather Report - Clear
+Disaster - None
+Objecive - Groceries
+
+Day 2:
+Weather Report - Light Rain
+Disaster - Flooding
+Objective - Inflatable raft pieces, O2 canisters, duct tape
+
+Day 3:
+Weather Report - Flurries, First Frost
+Disaster - Ice Age
+Objective - Firewood, Welding Gear
+
+( Days 4-5 if progress smooth. )
+Day 4:
+Weather Report - Harmless Tremors
+Disaster - Nuclear War / Earthquake
+Objective - Reinforced Construction Materials
+
+Day 5:
+Weather Report - Gentle Breeze
+Disaster - Cat 7 Storm
+Objective - More Reinforced Materials?
+
+( Stretch goal: Days 6-7 )
+{
+Day 6:
+Weather Report - Clear, Shooting Stars
+Disaster - Meteor Storm
+Objective - EVA Gear
+
+Day 7:
+Weather Report - Heat Wave
+Disaster - Supernova
+Objective - Rocket Components
+}
