@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
-    public static GameManager instance = null;
+    private static GameManager instance = null;
 
     public Player player;
     public ObjectivesManager objectivesManager;
+
 
     private void Awake()
     {
@@ -50,13 +51,20 @@ public class GameManager : MonoBehaviour
         Debug.Log("All objectives are complete!");
     }
 
+
+
     public void GameOver()
     {
-        Debug.Log("All objectives are failed- Game Over!");
+        Debug.Log("Game Over!");
     }
 
     public void RestartScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public static GameManager Get()
+    {
+        return instance;
     }
 }

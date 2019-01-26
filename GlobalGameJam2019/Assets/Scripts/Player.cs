@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public Animator anim;
     public float speed = 1;
     //public int i = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,4 +55,9 @@ public class Player : MonoBehaviour
     }
 
     
+    public void Die()
+    {
+        Debug.Log("Player is dead!");
+        GameManager.Get().GameOver();
+    }
 }
