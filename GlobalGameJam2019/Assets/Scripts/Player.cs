@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public Vector2 move;
+    public Animator anim;
     public float speed = 1;
     //public int i = 0;
     // Start is called before the first frame update
