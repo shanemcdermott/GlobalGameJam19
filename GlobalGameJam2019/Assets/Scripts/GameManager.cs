@@ -2,13 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    public int i = 0;
+
+    public Player player;
+
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Woop");
+        if(player==null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        }   
     }
 
     // Update is called once per frame
