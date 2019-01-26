@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HazardComponent : MonoBehaviour
 {
-    public Vector2 size;
+    public Vector2 size = new Vector2(1,1);
     private BoxCollider2D boxCollider;
     private Rigidbody2D rigidBody;
 
