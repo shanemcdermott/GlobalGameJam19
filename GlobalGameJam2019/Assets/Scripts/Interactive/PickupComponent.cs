@@ -16,10 +16,7 @@ public class PickupComponent : MonoBehaviour, Interactive
 
     private void Awake()
     {
-        if (OnItemPickup == null)
-        {
-            OnItemPickup = new PickupEvent();
-        }
+
     }
 
     public void Interact(Player inPlayer)
@@ -29,7 +26,7 @@ public class PickupComponent : MonoBehaviour, Interactive
         {
             inventory.AddItem(gameObject);
             OnItemPickup.Invoke(gameObject);
-            gameObject.SetActive(bShouldDeactivateOnPickup);
+            gameObject.SetActive(!bShouldDeactivateOnPickup);
         }
         else
         {
