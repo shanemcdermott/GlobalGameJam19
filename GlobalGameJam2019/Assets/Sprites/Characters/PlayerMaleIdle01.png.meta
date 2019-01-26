@@ -1,9 +1,8 @@
 fileFormatVersion: 2
-guid: 2ecc5cfec5b35254ba58ba157223ee0e
+guid: 6be548a026f0fdf4abe783e5ef51fa18
 TextureImporter:
   fileIDToRecycleName:
-    21300000: MaleWalk_0
-    21300002: MaleWalk_1
+    21300000: PlayerMaleIdle01_0
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -47,7 +46,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 512
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -86,30 +85,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MaleWalk_0
+      name: PlayerMaleIdle01_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 720
-        height: 720
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c50a6d8c0099244ba378100b58d3586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MaleWalk_1
-      rect:
-        serializedVersion: 2
-        x: 720
         y: 0
         width: 720
         height: 720
@@ -120,7 +99,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52f9b1d7f414fd540a948a601330cc5b
+      spriteID: 845f4b4a9343ec9488d8470c742f38ae
       vertices: []
       indices: 
       edges: []
@@ -128,7 +107,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8860e1c34c3fb0542a6b5556be748ed5
+    spriteID: e394e969418a4984fbccd13c5511c7b3
     vertices: []
     indices: 
     edges: []
