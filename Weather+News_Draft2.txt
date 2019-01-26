@@ -1,0 +1,64 @@
+Forecast:
+
+Day 0 (F22) - "Hello there Sommerville! This is Matt Winters with your weather report for tomorrow, February 23rd.
+Looks like it'll be a clear day to start off our week, so have yourself a sunny Sunday!
+And now for the news...
+Most local sports teams have been thrown into chaos by the redefinition of 'ball' to include 'cubes'.
+Proponents argue that this is a necessary measure to keep up with the increasing popularity of virtual reality sports.
+Critics believe that this adds a new dimension of unnecessary complexity and that "efforts could be better spent in debugging the physics engine we have in the real world".
+
+
+Day 1 (F23) - "Hello there Sommerville! This is Matt Winters with your weather report for tomorrow, February 24th.
+Tomorrow we're looking at heavy rains and minor flooding around town, so make sure you're ready to get to a high place or ready to float!"
+And now for the news...
+In order to celebrate National Pun Day, regional plane companies have discounted the cost of chartering flights which fly a banner containing a pun.
+Additionally, our local university has begun to give out free degrees in particle physics to anyone who completes eight years of education on the subject at the school. More on that at noon."
+
+
+Day 2 (F24) - "Hello there Sommerville! This is Matt Winters with your weather report for tomorrow, February 25th.
+We were expecting a late frost this year, but it looks like interactions between the flood and the Galakiir Glacial Sheet could lead to a regional ice age!
+Recommended actions include finding ways to keep out the cold snap."
+And now for the news...
+Unfortunately, the Sommerville Zoo appears to have been depopulated as of the flood.
+Reports have come in from eyewitnesses claiming to have seen a cruise liner crewed by animals, but these have yet to be confirmed."
+
+
+Day 3 (F25) - "Hello there Sommerville! This is Matt Winters with your weather report for tomorrow, February 26th.
+The seismological prediction system installed last year indicates a possible one or more earthquakes.
+As such, all citizens are asked to take refuge in solid and sturdy structures.
+And now for the news...
+At the global climate summit, accusations have been flying about research into a weather control program.
+This comes in the wake of a series of unexpected natural disasters striking around the world.
+International relations are very tense and could erupt without warning."
+
+
+Day 4 (F26) - "Hello there Sommerville! This is Matt Winters with your weather report for tomorrow, February 27th.
+Tropical storm Roberts has been steadily approaching the coastline and is expected to make landfall shortly after midnight.
+As the entirely new classification Category 7 has been created so it can be applied to Roberts, anyone who may be in the path - including citizens of Sommerville - are encouraged to either flee for their lives or...well, flee for their lives.
+Or take refuge behind or under many layers of dense material, such as the ground, osmium alloys, water, or iridium.
+And now for the news...
+The planetary population is estimated at an all time low in the wake of nuclear warfare.
+Survivors are cautioned to only go outside sparingly and prioritize shelter in shielded structures."
+
+
+Day 5 (F27) - "Hello there Sommerville! This is Matt Winters with your weather report for tomorrow, February 28th.
+For at least the past three years, astrologers predicted that the next time February didn't end in four weeks the stars would rain from the sky.
+Now it turns out that astronomers agree with this assessment, saying that the world is due for a series of high velocity asteroid impacts sometime tomorrow.
+Panic is advised, but Sommerville isn't known for its quitters so hang in there!
+And now for the news...
+The Roberts storm continues to rampage across land after striking Sommerville.
+It is now considered the first and only Category 8, with no sign of slowing.
+
+
+Day 6 (F28) - "Hello there Sommerville! This is Matt Winters with your weather report for tomorrow, February 29th.
+Tomorrow the world is ending as the sun expands at a rapid rate, starting to enter the final stages of its life.
+Tomorrow's wake, next dawn, will take place as the globe is engulfed in fire.
+Current survivors are encouraged to find usable debris from space to attempt to escape and carry on civilization elsewhere.
+And now for the news...
+The remanining radio contacts have claimed responsibility for the apocalypse in the name of various government agencies, financial institutions, or cults.
+Additionally, by popular consensus, today has been declared a new global holiday 'Apocalypse Day' and work is canceled.
+On that note, I'm off. Take care!"
+
+
+Day 7 (F29) - "Hello there...Sommerville? Or the part of Sommerville that's listening, anyway!
+Today should be a weather-free day and give a nice view of the stars."
