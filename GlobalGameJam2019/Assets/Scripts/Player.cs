@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Flop");
+        Debug.Log("Woop");
     }
 
     // Update is called once per frame
