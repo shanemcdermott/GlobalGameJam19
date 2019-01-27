@@ -234,6 +234,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 410434544}
+    - target: {fileID: 367287663, guid: 5ae892ed8b6ded647b2bd851f4d16d76, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -329.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 367287663, guid: 5ae892ed8b6ded647b2bd851f4d16d76, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -243.35
+      objectReference: {fileID: 0}
     - target: {fileID: 367287664, guid: 5ae892ed8b6ded647b2bd851f4d16d76, type: 3}
       propertyPath: m_Text
       value: '0/0
