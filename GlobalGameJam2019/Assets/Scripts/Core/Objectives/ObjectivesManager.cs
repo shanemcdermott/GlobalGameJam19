@@ -20,6 +20,7 @@ public class ObjectivesManager : MonoBehaviour
     void Start()
     {
         ResetObjectivesCount();
+        FindAllObjectives();
         ListenToObjectives();
     }
 
@@ -27,6 +28,19 @@ public class ObjectivesManager : MonoBehaviour
     {
         NumObjectivesFailed = 0;
         NumObjectivesComplete = 0;
+    }
+
+    void FindAllObjectives()
+    {
+        GameObject[] objectiveObjects = GameObject.FindGameObjectsWithTag("Objective");
+        if(objectiveObjects.Length != Objectives.Length)
+        {
+            Objectives = new ObjectiveComponent[objectiveObjects.Length];
+            for(int i = 0; i < Objectives.Length; i++)
+            {
+                Objectives[i] = objectiveObjects[i].GetComponent<ObjectiveComponent>();
+            }
+        }
     }
 
     void ListenToObjectives()
