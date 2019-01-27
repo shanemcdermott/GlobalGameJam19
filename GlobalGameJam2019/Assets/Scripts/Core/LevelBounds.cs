@@ -8,6 +8,9 @@ public class LevelBounds : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Destroy(collision.gameObject);
+        if (!collision.gameObject.GetComponent<Player>())
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
