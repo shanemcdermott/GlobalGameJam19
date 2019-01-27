@@ -12,7 +12,9 @@ public class playerInteract : MonoBehaviour
   //  int pickupTick = 0; //reduce rate that pickup objects are checked for
     void Start()
     {
-        player = GetComponent<Player>();
+        player = GameManager.Get().player;
+        objectivesManager = GameManager.Get().objectivesManager;
+        uiMaster = GameManager.Get().uiMaster;
     }
 
     // Update is called once per frame
@@ -28,6 +30,7 @@ public class playerInteract : MonoBehaviour
             {
                 pickup.Interact(player);
                 pickup = null;
+                uiMaster.disableItemText();
             }
         }
     }
@@ -36,19 +39,24 @@ public class playerInteract : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         PickupComponent p = collision.gameObject.GetComponent<PickupComponent>();
-        if(p != null)
+        if (p != null)
+        {
             pickup = p;
-
-        uiMaster.activateItemText(p);
+            uiMaster.activateItemText(p);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         PickupComponent p = collision.gameObject.GetComponent<PickupComponent>();
-        if (p != null)
+        if (p != null && pickup != null)
+        {
             if (pickup == p)
+            {
                 pickup = null;
-        uiMaster.disableItemText();
+                uiMaster.disableItemText();
+            }
+        }
     }
 
 }

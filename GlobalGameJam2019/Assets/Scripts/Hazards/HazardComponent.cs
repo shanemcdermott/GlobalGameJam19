@@ -12,9 +12,13 @@ public class HazardComponent : MonoBehaviour
     {
         if (boxCollider == null)
         {
-            boxCollider = gameObject.AddComponent<BoxCollider2D>();
-            boxCollider.size = size;
-            boxCollider.isTrigger = true;
+            boxCollider = gameObject.GetComponent<BoxCollider2D>();
+            if (boxCollider == null)
+            {
+                boxCollider = gameObject.AddComponent<BoxCollider2D>();
+                boxCollider.size = size;
+                //boxCollider.isTrigger = true;
+            }
         }
         if(rigidBody == null)
         {
@@ -28,6 +32,17 @@ public class HazardComponent : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Something collided!");
+        Player player = collision.gameObject.GetComponent<Player>();
+        if (player)
+        {
+            player.Die();
+        }
+    }
+
+    /*
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Something collided!");
@@ -37,4 +52,5 @@ public class HazardComponent : MonoBehaviour
             player.Die();
         }
     }
+    */
 }

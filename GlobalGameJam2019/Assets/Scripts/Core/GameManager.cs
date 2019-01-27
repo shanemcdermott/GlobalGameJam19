@@ -10,7 +10,9 @@ public class GameManager : MonoBehaviour
 
     public Player player;
     public ObjectivesManager objectivesManager;
+    public UIMaster uiMaster;
 
+    private IEnumerator coroutine;
 
     private void Awake()
     {
@@ -56,10 +58,15 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         Debug.Log("Game Over!");
+        player.enabled = false;
+        uiMaster.restartButton.gameObject.SetActive(true);
     }
+
+   
 
     public void RestartScene()
     {
+        Debug.Log("Loading Scene: " + SceneManager.GetActiveScene().name);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -67,4 +74,5 @@ public class GameManager : MonoBehaviour
     {
         return instance;
     }
+
 }
