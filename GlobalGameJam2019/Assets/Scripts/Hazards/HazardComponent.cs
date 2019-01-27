@@ -7,9 +7,10 @@ public class HazardComponent : MonoBehaviour
     public Vector2 size = new Vector2(1,1);
     private BoxCollider2D boxCollider;
     private Rigidbody2D rigidBody;
-
+    public string killMessage;
     void Awake()
     {
+        if (killMessage == "") killMessage = "You Were Killed to Death";
         if (boxCollider == null)
         {
             boxCollider = gameObject.GetComponent<BoxCollider2D>();
@@ -38,8 +39,9 @@ public class HazardComponent : MonoBehaviour
         Player player = collision.gameObject.GetComponent<Player>();
         if (player)
         {
+            GameManager.Get().gameOverMessage = killMessage;
             player.Die();
-            //GameManager.Get().gameOverMessage =
+           
         }
     }
 

@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: {x: 1, y: 1}
+  killMessage: You Got Run Over.
 --- !u!61 &2849556280321131288
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -88,7 +89,6 @@ MonoBehaviour:
   direction: {x: 0, y: 1}
   speed: 3
   target: {fileID: 0}
-  snapAngle: 90
   acceptableDistance: 0.15
 --- !u!1 &4412125523029770628
 GameObject:

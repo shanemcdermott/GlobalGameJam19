@@ -8,6 +8,7 @@ public class UIMaster : MonoBehaviour
     public Text text;
     public Button restartButton;
     public RectTransform deathPanel;
+    public Text deathText;
     // Start is called before the first frame update
     void Start()
     {
