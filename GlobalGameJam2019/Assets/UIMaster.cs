@@ -9,6 +9,7 @@ public class UIMaster : MonoBehaviour
     public Button restartButton;
     public RectTransform deathPanel;
     public Text deathText;
+    public Text objectiveText;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,5 +31,9 @@ public class UIMaster : MonoBehaviour
     public void disableItemText()
     {
         text.enabled = false;
+    }
+    public void updateObjectiveText(int x, int y)
+    {
+        objectiveText.text = x + "/" + y;
     }
 }
