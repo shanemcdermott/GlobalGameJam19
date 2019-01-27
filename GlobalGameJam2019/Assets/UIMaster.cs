@@ -10,10 +10,40 @@ public class UIMaster : MonoBehaviour
     public RectTransform deathPanel;
     public Text deathText;
     public Text objectiveText;
+
+    public Button forecastButton;
+    public string[] forecastTexts;
+    private int forecastIndex = 0;
+    public ScrollingDialogue scrollingDialogue;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (scrollingDialogue)
+        {
+            scrollingDialogue.InitDialogue(forecastTexts[forecastIndex]);
+        }
+    }
+
+    public void NextNews()
+    {
+        forecastIndex++;
+        if(forecastIndex<forecastTexts.Length)
+        {
+            scrollingDialogue.AddDialogue(forecastTexts[forecastIndex]);
+        }
+        else
+        {
+            HideForecast();
+        }
+    }
+
+    public void HideForecast()
+    {
+        forecastButton.gameObject.SetActive(false);
+        forecastButton.enabled = false;
+        scrollingDialogue.text.enabled = false;
+        scrollingDialogue.enabled = false;
     }
 
     // Update is called once per frame
