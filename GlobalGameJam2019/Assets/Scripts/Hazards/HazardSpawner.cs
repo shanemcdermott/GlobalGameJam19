@@ -33,7 +33,25 @@ public class HazardSpawner : MonoBehaviour
 
     public void SpawnHazard(int id)
     {
-        spawnedHazards.Add(Instantiate(hazardPrefabs[id]));
+        int index = FindOpenIndex();
+        if (index >= 0)
+        {
+            spawnedHazards[index] = Instantiate(hazardPrefabs[id], transform);
+        }
+        else
+        {
+            spawnedHazards.Add(Instantiate(hazardPrefabs[id], transform));
+        }
+    }
+
+    private int FindOpenIndex()
+    {
+        for (int i = 0; i < spawnedHazards.Count; i++)
+        {
+            if (spawnedHazards[i] == null)
+                return i;
+        }
+        return -1;
     }
 
     private IEnumerator WaitAndSpawn(float waitTime)
