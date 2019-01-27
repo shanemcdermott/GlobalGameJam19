@@ -11261,6 +11261,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3572011297135372402, guid: aa31c2f246abeda4f8288abd98829f44,
+        type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
     - target: {fileID: 3572011297135372400, guid: aa31c2f246abeda4f8288abd98829f44,
         type: 3}
       propertyPath: player
@@ -11291,11 +11296,6 @@ PrefabInstance:
       propertyPath: Objectives.Array.data[0]
       value: 
       objectReference: {fileID: 565260304}
-    - target: {fileID: 3572011297135372402, guid: aa31c2f246abeda4f8288abd98829f44,
-        type: 3}
-      propertyPath: m_Name
-      value: GameManager
-      objectReference: {fileID: 0}
     - target: {fileID: 3572011297135372415, guid: aa31c2f246abeda4f8288abd98829f44,
         type: 3}
       propertyPath: m_LocalPosition.x
