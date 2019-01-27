@@ -119,15 +119,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7986559226321306160, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
-        type: 3}
-      propertyPath: m_Name
-      value: GUI
-      objectReference: {fileID: 0}
     - target: {fileID: 7986559225561802951, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986559226321306160, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
+      propertyPath: m_Name
+      value: GUI
       objectReference: {fileID: 0}
     - target: {fileID: 7986559226321306172, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
         type: 3}
@@ -371,11 +371,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2927bc54136b5e9418790bc168772de8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8dab3932e057c1a459ae88c82b21e3eb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -387,7 +387,7 @@ AudioSource:
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -10621,11 +10621,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3572011297135372402, guid: aa31c2f246abeda4f8288abd98829f44,
-        type: 3}
-      propertyPath: m_Name
-      value: GameManager
-      objectReference: {fileID: 0}
     - target: {fileID: 3572011297135372400, guid: aa31c2f246abeda4f8288abd98829f44,
         type: 3}
       propertyPath: player
@@ -10639,7 +10634,7 @@ PrefabInstance:
     - target: {fileID: 3572011297135372400, guid: aa31c2f246abeda4f8288abd98829f44,
         type: 3}
       propertyPath: gameOverMessage
-      value: You Failed To Death
+      value: You FROZE To Death
       objectReference: {fileID: 0}
     - target: {fileID: 3572011297135372401, guid: aa31c2f246abeda4f8288abd98829f44,
         type: 3}
@@ -10651,6 +10646,11 @@ PrefabInstance:
       propertyPath: Objectives.Array.data[0]
       value: 
       objectReference: {fileID: 565260304}
+    - target: {fileID: 3572011297135372402, guid: aa31c2f246abeda4f8288abd98829f44,
+        type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
     - target: {fileID: 3572011297135372415, guid: aa31c2f246abeda4f8288abd98829f44,
         type: 3}
       propertyPath: m_LocalPosition.x
