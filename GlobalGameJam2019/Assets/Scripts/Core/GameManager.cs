@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     public UIMaster uiMaster;
     public string gameOverMessage ="";
 
+
+
     public string NextLevelName;
 
 
@@ -44,7 +46,10 @@ public class GameManager : MonoBehaviour
             objectivesManager.OnAllObjectivesComplete.AddListener(NotifyLevelComplete);
             objectivesManager.OnAllObjectivesFailed.AddListener(GameOver);
         }
+
     }
+
+
 
     // Update is called once per frame
     void Update()

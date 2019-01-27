@@ -119,15 +119,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7986559225561802951, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7986559226321306160, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
         type: 3}
       propertyPath: m_Name
       value: GUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986559225561802951, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7986559226321306172, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
         type: 3}
@@ -236,9 +236,49 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7986559226321306173, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
         type: 3}
+      propertyPath: forecastTexts.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986559226321306173, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
       propertyPath: deathPanel
       value: 
       objectReference: {fileID: 741621029}
+    - target: {fileID: 7986559226321306173, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
+      propertyPath: forecastTexts.Array.data[0]
+      value: Day 2 (F24) - "Hello there Sommerville! This is Matt Winters with your
+        weather report for tomorrow, February 25th.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986559226321306173, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
+      propertyPath: forecastTexts.Array.data[1]
+      value: We were expecting a late frost this year, but it looks like interactions
+        between the flood and the Galakiir Glacial Sheet could lead to a regional
+        ice age!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986559226321306173, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
+      propertyPath: forecastTexts.Array.data[2]
+      value: Recommended actions include finding ways to keep out the cold snap."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986559226321306173, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
+      propertyPath: forecastTexts.Array.data[3]
+      value: And now for the news...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986559226321306173, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
+      propertyPath: forecastTexts.Array.data[4]
+      value: Unfortunately, the Sommerville Zoo appears to have been depopulated as
+        of the flood.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986559226321306173, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
+      propertyPath: forecastTexts.Array.data[5]
+      value: Reports have come in from eyewitnesses claiming to have seen a cruise
+        liner crewed by animals, but these have yet to be confirmed."
+      objectReference: {fileID: 0}
     - target: {fileID: 6976609626648035114, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -11290,6 +11330,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3572011297135372402, guid: aa31c2f246abeda4f8288abd98829f44,
+        type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
     - target: {fileID: 3572011297135372400, guid: aa31c2f246abeda4f8288abd98829f44,
         type: 3}
       propertyPath: player
@@ -11320,11 +11365,6 @@ PrefabInstance:
       propertyPath: Objectives.Array.data[0]
       value: 
       objectReference: {fileID: 565260304}
-    - target: {fileID: 3572011297135372402, guid: aa31c2f246abeda4f8288abd98829f44,
-        type: 3}
-      propertyPath: m_Name
-      value: GameManager
-      objectReference: {fileID: 0}
     - target: {fileID: 3572011297135372415, guid: aa31c2f246abeda4f8288abd98829f44,
         type: 3}
       propertyPath: m_LocalPosition.x

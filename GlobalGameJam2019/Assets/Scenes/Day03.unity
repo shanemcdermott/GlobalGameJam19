@@ -119,15 +119,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7986559225561802951, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7986559226321306160, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
         type: 3}
       propertyPath: m_Name
       value: GUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986559225561802951, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7986559226321306172, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
         type: 3}
@@ -236,9 +236,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7986559226321306173, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
         type: 3}
+      propertyPath: forecastTexts.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986559226321306173, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
       propertyPath: deathPanel
       value: 
       objectReference: {fileID: 741621029}
+    - target: {fileID: 7986559226321306173, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
+      propertyPath: forecastTexts.Array.data[0]
+      value: Day 3 (F25) - "Hello there Sommerville! This is Matt Winters with your
+        weather report for tomorrow, February 26th.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986559226321306173, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
+      propertyPath: forecastTexts.Array.data[1]
+      value: The seismological prediction system installed last year indicates a possible
+        one or more earthquakes.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986559226321306173, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
+      propertyPath: forecastTexts.Array.data[2]
+      value: As such, all citizens are asked to take refuge in solid and sturdy structures.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986559226321306173, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
+      propertyPath: forecastTexts.Array.data[3]
+      value: And now for the news...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986559226321306173, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
+      propertyPath: forecastTexts.Array.data[4]
+      value: At the global climate summit, accusations have been flying about research
+        into a weather control program.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986559226321306173, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
+      propertyPath: forecastTexts.Array.data[5]
+      value: This comes in the wake of a series of unexpected natural disasters striking
+        around the world.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986559226321306173, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
+        type: 3}
+      propertyPath: forecastTexts.Array.data[6]
+      value: International relations are very tense and could erupt without warning."
+      objectReference: {fileID: 0}
     - target: {fileID: 6976609626648035114, guid: 5ae892ed8b6ded647b2bd851f4d16d76,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -10648,6 +10692,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3572011297135372402, guid: aa31c2f246abeda4f8288abd98829f44,
+        type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
     - target: {fileID: 3572011297135372400, guid: aa31c2f246abeda4f8288abd98829f44,
         type: 3}
       propertyPath: player
@@ -10673,11 +10722,6 @@ PrefabInstance:
       propertyPath: Objectives.Array.data[0]
       value: 
       objectReference: {fileID: 565260304}
-    - target: {fileID: 3572011297135372402, guid: aa31c2f246abeda4f8288abd98829f44,
-        type: 3}
-      propertyPath: m_Name
-      value: GameManager
-      objectReference: {fileID: 0}
     - target: {fileID: 3572011297135372415, guid: aa31c2f246abeda4f8288abd98829f44,
         type: 3}
       propertyPath: m_LocalPosition.x
