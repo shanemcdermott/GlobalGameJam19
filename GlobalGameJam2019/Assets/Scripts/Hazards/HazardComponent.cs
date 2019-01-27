@@ -39,6 +39,7 @@ public class HazardComponent : MonoBehaviour
         if (player)
         {
             player.Die();
+            //GameManager.Get().gameOverMessage =
         }
     }
 
