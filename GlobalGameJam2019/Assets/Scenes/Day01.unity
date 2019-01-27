@@ -11233,6 +11233,11 @@ PrefabInstance:
       propertyPath: gameOverMessage
       value: You Failed To Death
       objectReference: {fileID: 0}
+    - target: {fileID: 3572011297135372400, guid: aa31c2f246abeda4f8288abd98829f44,
+        type: 3}
+      propertyPath: NextLevelName
+      value: Day02
+      objectReference: {fileID: 0}
     - target: {fileID: 3572011297135372401, guid: aa31c2f246abeda4f8288abd98829f44,
         type: 3}
       propertyPath: Objectives.Array.size
