@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public Player player;
     public ObjectivesManager objectivesManager;
     public UIMaster uiMaster;
+    public string gameOverMessage;
+
 
     private IEnumerator coroutine;
 
@@ -53,13 +55,19 @@ public class GameManager : MonoBehaviour
         Debug.Log("All objectives are complete!");
     }
 
-
+    public void GameOver(string msg)
+    {
+        gameOverMessage = msg;
+        GameOver();
+    }
 
     public void GameOver()
     {
         Debug.Log("Game Over!");
         player.enabled = false;
         uiMaster.restartButton.gameObject.SetActive(true);
+        GetComponent<AudioSource>().pitch = -1;
+        uiMaster.deathPanel.gameObject.SetActive(true);
     }
 
    
