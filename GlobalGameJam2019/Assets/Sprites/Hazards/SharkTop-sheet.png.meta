@@ -1,7 +1,9 @@
 fileFormatVersion: 2
-guid: fd7b8090ca9a4ab469cb48c53f53282e
+guid: 870efa21179be7d459b1a74ee964458a
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: SharkTop-sheet_0
+    21300002: SharkTop-sheet_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -82,11 +84,51 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SharkTop-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1442
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4baa1fb062f7034b95bfa54be144861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SharkTop-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 0
+        width: 1262
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91f73c277c32f1468b5dc345e80d02d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 646fc10e6e3a24f4fa368faaaecd5642
+    spriteID: f5ec2bb4968e49a438c626f6ff359a50
     vertices: []
     indices: 
     edges: []

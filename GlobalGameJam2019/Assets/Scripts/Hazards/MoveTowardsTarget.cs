@@ -8,7 +8,7 @@ public class MoveTowardsTarget : DirectionalMovement
     private TargetNode targetNode;
     
     public float acceptableDistance = .5f;
-
+    public bool shouldRotate = true;
 
     public void SetTarget(TargetNode newTargetNode)
     {
@@ -25,23 +25,26 @@ public class MoveTowardsTarget : DirectionalMovement
     public override void Move()
     {
         if(target)
-        {           
-            Vector2 relativePosition = target.position - transform.position;
-            
-            float angle = 0;
-            if(Mathf.Abs(relativePosition.x) > Mathf.Abs(relativePosition.y))
+        {
+            if (shouldRotate)
             {
-                angle = 90;
-                if(relativePosition.x<0)
-                angle = -90;
-            }
-            else if(relativePosition.y<0)
-            {
-                angle = 180;
-            }
-            
+                Vector2 relativePosition = target.position - transform.position;
 
-            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+                float angle = 0;
+                if (Mathf.Abs(relativePosition.x) > Mathf.Abs(relativePosition.y))
+                {
+                    angle = 90;
+                    if (relativePosition.x < 0)
+                        angle = -90;
+                }
+                else if (relativePosition.y < 0)
+                {
+                    angle = 180;
+                }
+
+
+                transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            }
             
             transform.position = Vector2.MoveTowards(new Vector2(transform.position.x, transform.position.y), target.position, speed * Time.deltaTime);
             
