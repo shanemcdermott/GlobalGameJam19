@@ -18,7 +18,11 @@ public class HazardComponent : MonoBehaviour
         }
         if(rigidBody == null)
         {
-            rigidBody = gameObject.AddComponent<Rigidbody2D>() as Rigidbody2D;
+            rigidBody = gameObject.GetComponent<Rigidbody2D>();
+            if (rigidBody == null)
+            {
+                rigidBody = gameObject.AddComponent<Rigidbody2D>() as Rigidbody2D;
+            }
             rigidBody.gravityScale = 0;
            
         }
