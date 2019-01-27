@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
         }
        
 
-        transform.Translate(move * speed);
+        transform.Translate(move * speed * Time.deltaTime);
         if (isMove)
         {
           //  Debug.Log("Move!");

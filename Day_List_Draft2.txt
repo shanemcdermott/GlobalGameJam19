@@ -1,0 +1,52 @@
+(Day 0 is a sort of prequel. Add if we have time to flesh out all the days.)
+Day 0:
+Current Disaster - None
+Hazard - None
+Weather Report - Clear
+Objecive - Groceries
+
+Day 1:
+Current Disaster - None
+Hazard - Traffic
+Weather Report - Flooding
+Objective - Inflatable raft pieces, O2 canisters, duct tape
+
+Day 2:
+Current Disaster - Flooding
+Hazard - Flotsam, Currents/Whirlpools, Sharks(?)
+Weather Report - Ice Age
+Objective - Firewood, Welding Gear
+
+Day 3:
+Current Disaster - Ice Age
+Hazard - Ice Physics, Wildlife
+Weather Report - Earthquake / Nuclear War
+Objective - Reinforced Construction Materials
+
+( Days 4-5 if progress smooth. )
+Day 4:
+Current Disaster - Nuclear War / Earthquake
+Hazard - Radiation, Crumbling Floors
+Weather Report - Hurricane
+Objective - More Reinforced Materials(?)
+
+Day 5:
+Disaster - Category 7 Storm
+Hazard - Cycling Floor Patterns(?)
+Weather Report - Meteor Storm
+Objective - EVA Gear
+
+( Stretch goal: Days 6-7 )
+{
+Day 6:
+Current Disaster - Meteor Storm
+Hazard - Broken Floors, Zero Gravity
+Weather Report - Supernova
+Objective - Rocket Components
+
+Day 7:
+Weather Report - Starry Sky
+Hazard - N/A
+Current Disaster - Supernova
+Objective - Rocket Components
+}
