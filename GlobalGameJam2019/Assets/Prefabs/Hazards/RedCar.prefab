@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4412125522402229483}
-  - component: {fileID: 4412125522402229482}
   - component: {fileID: 4412125522402229397}
   - component: {fileID: 2849556280321131288}
+  - component: {fileID: 7987509031336908561}
   m_Layer: 0
   m_Name: RedCar
   m_TagString: Untagged
@@ -34,20 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4412125522402229482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4412125522402229396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05b9f143e17df8340a67f650d029edaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  direction: {x: 0, y: 1}
-  speed: 2
 --- !u!114 &4412125522402229397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,6 +73,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.35, y: 0.7}
   m_EdgeRadius: 0
+--- !u!114 &7987509031336908561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4412125522402229396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4396e9c709f9364aac37c0466366a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: {x: 0, y: 1}
+  speed: 3
+  target: {fileID: 0}
+  snapAngle: 90
+  acceptableDistance: 0.15
 --- !u!1 &4412125523029770628
 GameObject:
   m_ObjectHideFlags: 0

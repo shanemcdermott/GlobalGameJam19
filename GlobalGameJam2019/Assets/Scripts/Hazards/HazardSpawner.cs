@@ -8,6 +8,7 @@ public class HazardSpawner : MonoBehaviour
     public float spawnInterval = 2;
     public int maxHazards = 20;
 
+    public Transform initialMovementTarget;
     public List<GameObject> spawnedHazards;
     
 
@@ -33,14 +34,28 @@ public class HazardSpawner : MonoBehaviour
 
     public void SpawnHazard(int id)
     {
+       
+        GameObject newObject = Instantiate(hazardPrefabs[id], transform);
         int index = FindOpenIndex();
+
+        if(initialMovementTarget)
+        {
+            MoveTowardsTarget targeting = newObject.GetComponent<MoveTowardsTarget>();
+            if(targeting)
+            {
+
+                targeting.SetTarget(initialMovementTarget);
+            }
+        }
+
+      
         if (index >= 0)
         {
-            spawnedHazards[index] = Instantiate(hazardPrefabs[id], transform);
+            spawnedHazards[index] = newObject;
         }
         else
         {
-            spawnedHazards.Add(Instantiate(hazardPrefabs[id], transform));
+            spawnedHazards.Add(newObject);
         }
     }
 

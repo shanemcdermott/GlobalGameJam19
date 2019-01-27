@@ -15,7 +15,7 @@ public class DirectionalMovement : MonoBehaviour
         Move();
     }
 
-    public void Move()
+    public virtual void Move()
     {
         gameObject.transform.Translate(direction * speed * Time.deltaTime);
     }
