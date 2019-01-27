@@ -7,6 +7,9 @@ public class Player : MonoBehaviour
     public Vector2 move;
     public Animator anim;
     public float speed = 1;
+    public AudioClip[] openings;
+    public AudioClip[] deaths;
+    public AudioSource aud;
     bool isMove = false;
     //public int i = 0;
 
@@ -14,7 +17,9 @@ public class Player : MonoBehaviour
     void Start()
     {
         Debug.Log("Woop");
-
+        aud = GetComponent<AudioSource>();
+        aud.clip = openings[Random.Range(0, openings.Length)];
+        aud.Play();
     }
 
     // Update is called once per frame
@@ -49,6 +54,10 @@ public class Player : MonoBehaviour
     
     public void Die()
     {
+        aud.clip = deaths[Random.Range(0, deaths.Length)];
+        aud.volume =0.5f;
+        aud.Play();
+       // aud.volume = 1;
         Debug.Log("Player is dead!");
         GameManager.Get().GameOver();
     }
