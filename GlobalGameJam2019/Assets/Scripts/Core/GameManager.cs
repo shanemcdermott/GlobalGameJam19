@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Game Over!");
         player.enabled = false;
         uiMaster.restartButton.gameObject.SetActive(true);
+        GetComponent<AudioSource>().pitch = -1;
     }
 
    
