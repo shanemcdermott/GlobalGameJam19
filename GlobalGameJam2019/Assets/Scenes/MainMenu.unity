@@ -591,7 +591,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &304222899
 RectTransform:
   m_ObjectHideFlags: 0
@@ -609,8 +609,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.6, y: -10.4}
-  m_SizeDelta: {x: -224.4, y: -178.8}
+  m_AnchoredPosition: {x: -4.5999756, y: 39.500004}
+  m_SizeDelta: {x: -224.4, y: -79.00001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304222900
 MonoBehaviour:
@@ -5871,9 +5871,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1122862324}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cde025320d97954888635f5fde48b70, type: 3}
+  m_Script: {fileID: 11500000, guid: 348a98deca48ced46995361cc97fcb5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetToToggle: {fileID: 304222898}
 --- !u!114 &1122862327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5915,7 +5916,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1122862326}
-        m_MethodName: QuitGame
+        m_MethodName: ToggleObject
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

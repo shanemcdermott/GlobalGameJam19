@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -47,7 +48,10 @@ public class Player : MonoBehaviour
            // Debug.Log("Don't move!");
         }
 
-
+        if(Input.GetButtonDown("Quit"))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
 
     }
 
