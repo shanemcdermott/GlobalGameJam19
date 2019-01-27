@@ -5,10 +5,10 @@ using UnityEngine;
 public class playerInteract : MonoBehaviour
 {
     public Player player;
-    public float pickupDistance = 2.0f;
+    //public float pickupDistance = 2.0f;
     public PickupComponent pickup; //nearest object
     public ObjectivesManager objectivesManager;
-    int pickupTick = 0; //reduce rate that pickup objects are checked for
+  //  int pickupTick = 0; //reduce rate that pickup objects are checked for
     void Start()
     {
         player = GetComponent<Player>();
@@ -17,17 +17,9 @@ public class playerInteract : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*  if(Input.GetButtonDown(interactButton))
-          {
-              Debug.Log("INTERACT");
-          }*/
-        if(pickupTick % 10==0)
-        {
-            checkForPickups();
-            checkForOutOfRange();
-        }
+       
 
-        pickupTick++;
+       // pickupTick++;
 
         if (Input.GetAxis("Interact") > 1 || Input.GetKeyDown(KeyCode.J)) 
         {
@@ -39,6 +31,24 @@ public class playerInteract : MonoBehaviour
         }
     }
 
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        PickupComponent p = collision.gameObject.GetComponent<PickupComponent>();
+        if(p != null)
+            pickup = p;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        PickupComponent p = collision.gameObject.GetComponent<PickupComponent>();
+        if (p != null)
+            if (pickup == p)
+                pickup = null;
+
+    }
+
+    /*
     private void checkForPickups()
     {
         foreach (ObjectiveComponent o in objectivesManager.Objectives)
@@ -71,6 +81,6 @@ public class playerInteract : MonoBehaviour
             pickup = null;
         }
     }
-
+    */
 
 }
