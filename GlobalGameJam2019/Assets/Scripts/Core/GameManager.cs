@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     public UIMaster uiMaster;
     public string gameOverMessage ="";
 
+    public string NextLevelName;
+
 
     private IEnumerator coroutine;
 
@@ -53,6 +55,7 @@ public class GameManager : MonoBehaviour
     public void NotifyLevelComplete()
     {
         Debug.Log("All objectives are complete!");
+        LoadNextScene();
     }
 
 
@@ -68,7 +71,10 @@ public class GameManager : MonoBehaviour
        
     }
 
-   
+   public void LoadNextScene()
+    {
+        SceneManager.LoadScene(NextLevelName);
+    }
 
     public void RestartScene()
     {
