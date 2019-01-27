@@ -13,6 +13,7 @@ public class PickupComponent : MonoBehaviour, Interactive
 
     public PickupEvent OnItemPickup = new PickupEvent();
 
+    public string itemName = "item";
 
     private void Awake()
     {
