@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProtoGrass
+  m_Name: Stone
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 78ff81319e3fbd54985f1a1c981062e0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5bec60cb36fd865429b08e7ab6d192d0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
