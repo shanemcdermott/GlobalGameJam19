@@ -8,6 +8,7 @@ public class playerInteract : MonoBehaviour
     //public float pickupDistance = 2.0f;
     public PickupComponent pickup; //nearest object
     public ObjectivesManager objectivesManager;
+    public UIMaster uiMaster;
   //  int pickupTick = 0; //reduce rate that pickup objects are checked for
     void Start()
     {
@@ -37,6 +38,8 @@ public class playerInteract : MonoBehaviour
         PickupComponent p = collision.gameObject.GetComponent<PickupComponent>();
         if(p != null)
             pickup = p;
+
+        uiMaster.activateItemText(p);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -45,42 +48,7 @@ public class playerInteract : MonoBehaviour
         if (p != null)
             if (pickup == p)
                 pickup = null;
-
+        uiMaster.disableItemText();
     }
-
-    /*
-    private void checkForPickups()
-    {
-        foreach (ObjectiveComponent o in objectivesManager.Objectives)
-        {
-            if (o.isActiveAndEnabled)
-            {
-
-                if (o.GetComponent<PickupComponent>())
-                {
-                    Vector2 oPosition = o.transform.position;
-                    float distance = Vector2.Distance(transform.position, oPosition);
-                    if (distance <= pickupDistance)
-                    {
-                        Debug.Log("Can be picked up!");
-                        pickup = o.GetComponent<PickupComponent>();
-                    }
-                }
-            }
-        }
-    }
-
-    private void checkForOutOfRange()
-    {
-        if (pickup == null) return;
-        Vector2 oPosition = pickup.transform.position;
-        float distance = Vector2.Distance(transform.position, oPosition);
-        if (distance > pickupDistance)
-        {
-            Debug.Log("Out of range!");
-            pickup = null;
-        }
-    }
-    */
 
 }
