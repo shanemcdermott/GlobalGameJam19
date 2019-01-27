@@ -22,6 +22,7 @@ public class ObjectivesManager : MonoBehaviour
         ResetObjectivesCount();
         FindAllObjectives();
         ListenToObjectives();
+        GameManager.Get().uiMaster.updateObjectiveText(NumObjectivesComplete, Objectives.Length);
     }
 
     void ResetObjectivesCount()
@@ -71,6 +72,7 @@ public class ObjectivesManager : MonoBehaviour
         {
             OnAllObjectivesComplete.Invoke();
         }
+        GameManager.Get().uiMaster.updateObjectiveText(NumObjectivesComplete, Objectives.Length);
     }
 
     public void RespondToObjectiveFailure(ObjectiveComponent failedObjective)
