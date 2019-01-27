@@ -10822,6 +10822,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9021730664326789874, guid: 5c9bd6a382466da458842cd017bffee3,
+        type: 3}
+      propertyPath: itemName
+      value: Life Raft
+      objectReference: {fileID: 0}
     - target: {fileID: 8190171447119500028, guid: 5c9bd6a382466da458842cd017bffee3,
         type: 3}
       propertyPath: m_Sprite
@@ -11057,6 +11062,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9021730664326789874, guid: 5c9bd6a382466da458842cd017bffee3,
+        type: 3}
+      propertyPath: itemName
+      value: Floaty
       objectReference: {fileID: 0}
     - target: {fileID: 3674746872462118142, guid: 5c9bd6a382466da458842cd017bffee3,
         type: 3}
