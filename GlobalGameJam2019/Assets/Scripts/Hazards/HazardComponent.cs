@@ -35,7 +35,7 @@ public class HazardComponent : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Something collided!");
+
         Player player = collision.gameObject.GetComponent<Player>();
         if (player)
         {
